@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>maths</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>cube</display-name>
+    <servlet-name>cube</servlet-name>
+    <servlet-class>cube</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>cube</servlet-name>
+    <url-pattern>/c</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>S1</display-name>
+    <servlet-name>S1</servlet-name>
+    <servlet-class>S1</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>S1</servlet-name>
+    <url-pattern>/S1</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>S2</display-name>
+    <servlet-name>S2</servlet-name>
+    <servlet-class>S2</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>S2</servlet-name>
+    <url-pattern>/S2</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>FdCal</display-name>
+    <servlet-name>FdCal</servlet-name>
+    <servlet-class>FdCal</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FdCal</servlet-name>
+    <url-pattern>/Fdcal</url-pattern>
+  </servlet-mapping>
+<servlet>
+<description></description>
+<servlet-name>Fdcal</servlet-name>
+    <servlet-class>Fdcal</servlet-class>
+    <init-param>
+    <param-name>roi</param-name>
+    <param-value>15</param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Fdcal</servlet-name>
+    <url-pattern>/fdcal</url-pattern>
+  </servlet-mapping>
+</web-app>
